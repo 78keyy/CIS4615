@@ -1,6 +1,6 @@
 public class R07_ERR01_J {
     
-    //non-compliant code
+
     public boolean loginUserNonCompliant(String username, String password) {
         if (!isValidUser(username)) {
             throw new SecurityException("Invalid user: " + username);
