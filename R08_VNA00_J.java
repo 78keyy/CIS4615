@@ -2,7 +2,7 @@ public class R08_VNA00_J {
     private int counter = 0;
     private volatile boolean done = false;
     
-    //non-compliant code
+  
     public void setDoneNonCompliant() {
         done = true;
     }
