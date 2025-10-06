@@ -1,11 +1,11 @@
 public class R10_OBJ01_J {
     
-    // Non-compliant code - public mutable field
+    
     public class BankAccountNonCompliant {
         public double balance; // Public mutable field - dangerous!
     }
     
-    // Compliant solution - private field with accessors
+   
     public class BankAccountCompliant {
         private double balance;
         
