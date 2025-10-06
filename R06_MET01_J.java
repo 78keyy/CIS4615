@@ -1,6 +1,6 @@
 public class R06_MET01_J {
     
-    // Non-compliant code
+
     public static int getAbsAddNonCompliant(int x, int y) {
         assert x != Integer.MIN_VALUE;
         assert y != Integer.MIN_VALUE;
@@ -10,7 +10,7 @@ public class R06_MET01_J {
         return absX + absY;
     }
     
-    // Compliant solution
+  
     public static int getAbsAddCompliant(int x, int y) {
         if (x == Integer.MIN_VALUE || y == Integer.MIN_VALUE) {
             throw new IllegalArgumentException();
@@ -24,14 +24,13 @@ public class R06_MET01_J {
     }
     
     public static void main(String[] args) {
-        // This will fail silently with assertions disabled
+        
         try {
             getAbsAddNonCompliant(Integer.MIN_VALUE, 1);
         } catch (Exception e) {
             System.out.println("Non-compliant method failed: " + e.getMessage());
         }
         
-        // This will properly throw exception
         try {
             getAbsAddCompliant(Integer.MIN_VALUE, 1);
         } catch (IllegalArgumentException e) {
