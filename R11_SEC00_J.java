@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class R11_SEC00_J {
     
-    //non-compliant code
+  
     public void processDataNonCompliant(Set<String> sensitiveData) {
         HashSet<String> dataSet = new HashSet<>(sensitiveData);
         for (String data : dataSet) {
