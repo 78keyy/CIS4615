@@ -1,7 +1,7 @@
 public class R09_LCK00_J {
     private int count = 0;
     
-    //non-compliant code
+   
     public synchronized void incrementNonCompliant() {
         count++;
     }
