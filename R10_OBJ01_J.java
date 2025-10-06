@@ -2,7 +2,7 @@ public class R10_OBJ01_J {
     
     
     public class BankAccountNonCompliant {
-        public double balance; // Public mutable field - dangerous!
+        public double balance; 
     }
     
    
