@@ -5,7 +5,7 @@ public class R00_IDS03_J {
     private static final Logger logger = Logger.getLogger(R00_IDS03_J.class.getName());
     private boolean loginSuccessful = false;
     
-    //non-compliant code
+
     public void logLoginAttemptNonCompliant(String username) {
         if (loginSuccessful) {
             logger.severe("User login succeeded for: " + username);
@@ -14,7 +14,7 @@ public class R00_IDS03_J {
         }
     }
     
-    //compliant solution
+
     public void logLoginAttemptCompliant(String username) {
         if (loginSuccessful) {
             logger.severe("User login succeeded for: " + sanitizeUser(username));
